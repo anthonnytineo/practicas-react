@@ -8,7 +8,7 @@ export default function ScrollHooks () {
 
   // sintaxis fases de montaje de useEffect
   useEffect(() => {
-    console.log("Fase de actualizacion");
+    // console.log("Fase de actualizacion");
     const detectarScroll = () => setscrollY(window.pageYOffset);
     window.addEventListener("scroll", detectarScroll);
 
@@ -20,7 +20,7 @@ export default function ScrollHooks () {
   // sintaxis fases de actualizacion de useEffect, solo se actualiza 
   // cuando la variable scrollY sufra algun cambio.
   useEffect(() => {
-    console.log("Fase de montaje");
+    // console.log("Fase de montaje");
   },[]);
 
   // sintaxis fases de desmontaje de useEffect al pasarle como retorno una funcion.
